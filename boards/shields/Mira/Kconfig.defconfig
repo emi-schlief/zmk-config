@@ -1,6 +1,6 @@
 if SHIELD_MIRA_LEFT
 
-config ZMK_MIRA
+config ZMK_KEYBOARD_NAME
 	default "Mira"
 
 config ZMK_SPLIT_ROLE_CENTRAL
