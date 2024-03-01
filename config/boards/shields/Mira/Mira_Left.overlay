@@ -1,4 +1,4 @@
-# include Mira.dtsi
+# include "Mira.dtsi"
 
 default_kscan: kscan {
 	compatible = "zmk,kscan-gpio-direct";
