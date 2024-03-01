@@ -4,6 +4,6 @@
 	};
 
 	&default_kscan: kscan {
-		
+		compatible = "zmk,kscan-gpio-direct";
 	}
 };
