@@ -2,4 +2,8 @@
 	chosen {
 		zmk,kscan = &default_kscan;
 	};
+
+	&default_kscan: kscan {
+		
+	}
 };
