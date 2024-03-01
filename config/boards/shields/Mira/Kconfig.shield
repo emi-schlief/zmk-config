@@ -1,0 +1,5 @@
+config SHIELD_MIRA_LEFT
+	def_bool $(shields_list_contains,Mira_Left)
+
+config SHIELD_MIRA_RIGHT
+	def_bool $(shields_list_contains,Mira_Right)
