@@ -2,3 +2,5 @@ if SHIELD_MIRA
 
 config ZMK_MIRA
 	default "Mira"
+
+endif
