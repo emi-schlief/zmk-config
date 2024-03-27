@@ -1,0 +1,6 @@
+if SHIELD_MIRA
+
+config ZMK_KEYBOARD_NAME
+	default "Mira"
+
+endif
