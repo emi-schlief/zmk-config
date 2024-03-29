@@ -19,8 +19,8 @@
 
         default_layer {
         	bindings = <
-				&kp * &kp S &kp T &kp P &kp H &kp *
-				&kp * &kp S &kp K &kp W &kp R &kp *
+				&kp STAR &kp S &kp T &kp P &kp H &kp STAR
+				&kp STAR &kp S &kp K &kp W &kp R &kp STAR
 				&to 0 &to 1 &kp A
 				&to 2 &kp SPACE &kp O
             >;
@@ -28,19 +28,19 @@
 
 		letter_layer {
 			bindings = <
-				&kp * &kp * &kp * &kp * &kp * &kp *
-				&kp * &kp * &kp * &kp * &kp * &kp *
-				&to 0 &to 1 &kp *
-				&to 2 &kp SPACE &kp *
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&to 0 &to 1 &kp STAR
+				&to 2 &kp SPACE &kp STAR
 			>;
 		};
 
 		symbol_layer {
 			bindings = <
-				&kp * &kp * &kp * &kp * &kp * &kp *
-				&kp * &kp * &kp * &kp * &kp * &kp *
-				&to 0 &to 1 &kp *
-				&to 2 &kp SPACE &kp *
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&to 0 &to 1 &kp STAR
+				&to 2 &kp SPACE &kp STAR
 			>;
 		};
 
