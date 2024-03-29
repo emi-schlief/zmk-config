@@ -3,13 +3,54 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_game {
+            timeout-ms = <50>;
+            key-positions = <12 15>;
+            bindings = <&to 3>;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
         default_layer {
         	bindings = <
-			&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R
+				&kp * &kp S &kp T &kp P &kp H &kp *
+				&kp * &kp S &kp K &kp W &kp R &kp *
+				&to 0 &to 1 &kp A
+				&to 2 &kp SPACE &kp O
             >;
         };
+
+		letter_layer {
+			bindings = <
+				&kp * &kp * &kp * &kp * &kp * &kp *
+				&kp * &kp * &kp * &kp * &kp * &kp *
+				&to 0 &to 1 &kp *
+				&to 2 &kp SPACE &kp *
+			>;
+		};
+
+		symbol_layer {
+			bindings = <
+				&kp * &kp * &kp * &kp * &kp * &kp *
+				&kp * &kp * &kp * &kp * &kp * &kp *
+				&to 0 &to 1 &kp *
+				&to 2 &kp SPACE &kp *
+			>;
+		};
+
+		gaming_layer {
+			bindings = <
+				&kp ESC &kp LSHFT &kp A &kp W &kp D &kp F
+				&kp M &kp LCTRL &kp Q &kp S &kp E &kp R
+				&to 0 &kp N0 &kp N1
+				&kp N2 &kp SPACE &kp n3
+			>;
+		};
     };
 };
