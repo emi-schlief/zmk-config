@@ -8,8 +8,38 @@
 
         default_layer {
         	bindings = <
-			&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R
+				&kp STAR &kp F &kp P &kp L &kp T &kp D
+				&kp STAR &kp R &kp B &kp G &kp S &kp Z
+				&kp U &to 0 &to 0
+				&kp E &kp BSPC &to 0
             >;
         };
+
+		letter_layer {
+			bindings = <
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&to 0 &to 1 &kp STAR
+				&to 2 &kp BSPC &kp STAR
+			>;
+		};
+
+		symbol_layer {
+			bindings = <
+				&kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp STAR
+				&kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp STAR
+				&to 0 &to 1 &kp STAR
+				&to 2 &kp BSPC &kp STAR
+			>;
+		};
+
+		gaming_layer {
+			bindings = <
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR
+			>;
+		};
     };
 };

@@ -19,8 +19,8 @@
 
         default_layer {
         	bindings = <
-				&kp STAR &kp S &kp T &kp P &kp H &kp STAR
-				&kp STAR &kp S &kp K &kp W &kp R &kp STAR
+				&kp CTRL &kp S &kp T &kp P &kp H &kp STAR
+				&kp LALT &kp S &kp K &kp W &kp R &kp STAR
 				&to 0 &to 1 &kp A
 				&to 2 &kp SPACE &kp O
             >;
@@ -47,9 +47,9 @@
 		gaming_layer {
 			bindings = <
 				&kp ESC &kp LSHFT &kp A &kp W &kp D &kp F
-				&kp M &kp LCTRL &kp Q &kp S &kp E &kp R
+				&kp M &kp TAB &kp Q &kp S &kp E &kp R
 				&to 0 &kp N0 &kp N1
-				&kp N2 &kp SPACE &kp N3
+				&kp CAPS &kp C &kp T
 			>;
 		};
     };
