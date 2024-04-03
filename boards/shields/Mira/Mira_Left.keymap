@@ -19,7 +19,7 @@
 
         default_layer {
         	bindings = <
-				&kp CTRL &kp S &kp T &kp P &kp H &kp STAR
+				&kp LCTRL &kp S &kp T &kp P &kp H &kp STAR
 				&kp LALT &kp S &kp K &kp W &kp R &kp STAR
 				&to 0 &to 1 &kp A
 				&to 2 &kp SPACE &kp O
