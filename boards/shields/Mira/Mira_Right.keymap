@@ -19,7 +19,7 @@
 			bindings = <
 				&kp F     &kp G    &kp C    &kp R    &kp L    &kp MINUS
 				&dvpstar  &dvprpar &dvpplus &dvprbkt &dvpexcl &dvphash
-				&kp at    &kp FSLH &kp BSLH
+				&kp AT    &kp FSLH &kp BSLH
 				&kp RSHFT &kp BSPC &to 3
 			>;
 		};
