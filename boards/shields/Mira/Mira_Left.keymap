@@ -28,8 +28,8 @@ include <behaviors.dtsi>
 
 		letter_layer {
 			bindings = <
-				&kp STAR     &kp SEMI     &kp COMMA    &kp DOT      &kp P        &kp Y 
-				&kp dvp_amps &kp dvp_lbkt &kp dvp_lbrc &kp dvp_rbrc &kp dvp_lpar &kp dvp_equal
+				&kp STAR  &kp SEMI  &kp COMMA &kp DOT   &kp P     &kp Y 
+				&dvp_amps &dvp_lbkt &dvp_lbrc &dvp_rbrc &dvp_lpar &dvp_equal
 				&to 0        &to 1        &kp STAR
 				&to 2        &kp SPACE    &kp STAR
 			>;
