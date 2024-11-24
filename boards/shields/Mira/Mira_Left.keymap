@@ -62,7 +62,7 @@
 			#binding-cells = <0>;
 			bindings = <&kp DLLR>, <&kp TILDE>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
         dvpamps: dvp_amps {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
