@@ -17,37 +17,37 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-        default_layer {
+        base0 {
         	bindings = <
 				&kp TAB &kp A     &kp O     &kp E &kp U &kp I
 				&kp ESC &kp SQT   &kp Q     &kp J &kp K &kp X
-				&to 0   &to 1     &kp A
-				&to 2   &kp SPACE &kp LSHFT
+				&to 0   &sl 1     &kp LCTRL
+				&to 2   &kp SPACE &kp LCMD
             >;
         };
 
-		letter_layer {
+		base1 {
 			bindings = <
-				&kp STAR &kp SEMI  &kp COMMA &kp DOT  &kp P    &kp Y 
+				&dvpdllr &kp SEMI  &kp COMMA &kp DOT  &kp P    &kp Y 
 				&dvpamps &dvplbkt  &dvplbrc  &dvprbrc &dvplpar &dvpequal
-				&to 0    &to 1     &kp STAR
-				&to 2    &kp SPACE &kp STAR
+				&to 0    &to 1     &kp LCTRL
+				&to 2    &kp SPACE &kp LCMD
 			>;
 		};
 
-		symbol_layer {
+		extra {
 			bindings = <
 				&kp STAR &kp STAR  &kp STAR &kp STAR &kp STAR &kp STAR
 				&kp STAR &kp STAR  &kp STAR &kp STAR &kp STAR &kp STAR
-				&to 0    &to 1     &kp STAR
-				&to 2    &kp SPACE &kp STAR
+				&to 0    &sl 1     &kp LCTRL
+				&to 2    &kp SPACE &kp LCMD
 			>;
 		};
 
-		gaming_layer {
+		gaming {
 			bindings = <
 				&kp ESC  &kp LSHFT &kp A  &kp W &kp D &kp F
-				&kp M    &kp TAB   &kp Q  &kp S &kp E &kp R
+				&kp M    &kp LCTRL &kp Q  &kp S &kp E &kp R
 				&to 0    &kp N0    &kp N1
 				&kp CAPS &kp C     &kp T
 			>;
@@ -57,6 +57,12 @@
 
 / {
     behaviors {
+		dvpdllr: dvp_dllr {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp DLLR>, <&kp TILDE>;
+			mods = <(MOD_LSFT)>;
+		}
         dvpamps: dvp_amps {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
