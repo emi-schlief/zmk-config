@@ -19,28 +19,19 @@
 
         base0 {
         	bindings = <
-				&kp TAB &kp A     &kp O     &kp E &kp U &kp I
-				&kp ESC &kp SQT   &kp Q     &kp J &kp K &kp X
-				&to 0   &sl 1     &kp LCTRL
-				&to 2   &kp SPACE &kp LCMD
+				&kp LSHFT &kp A   &kp O    &kp E &kp U &kp I
+				&kp LCTRL &kp SQT &kp Q    &kp J &kp K &kp X
+				&to 0     &kp ESC &mo 2
+				&kp TAB   &sl 1   &kp LCMD
             >;
         };
 
 		base1 {
 			bindings = <
-				&dvpdllr &kp SEMI  &kp COMMA &kp DOT  &kp P    &kp Y 
-				&dvpamps &dvplbkt  &dvplbrc  &dvprbrc &dvplpar &dvpequal
-				&to 0    &to 1     &kp LCTRL
-				&to 2    &kp SPACE &kp LCMD
-			>;
-		};
-
-		extra {
-			bindings = <
-				&kp STAR &kp STAR  &kp STAR &kp STAR &kp STAR &kp STAR
-				&kp STAR &kp STAR  &kp STAR &kp STAR &kp STAR &kp STAR
-				&to 0    &sl 1     &kp LCTRL
-				&to 2    &kp SPACE &kp LCMD
+				&dvpdllr &kp SEMI &kp COMMA &kp DOT  &kp P    &kp Y 
+				&dvpamps &dvplbkt &dvplbrc  &dvprbrc &dvplpar &dvpequal
+				&to 0    &kp ESC  &mo 2
+				&kp TAB  &sl 1    &kp LCMD
 			>;
 		};
 
@@ -97,42 +88,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp N9>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvpstar: dvp_star {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp STAR>, <&kp N0>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvprpar: dvp_rpar {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp N2>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvpplus: dvp_plus {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp N4>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvprbkt: dvp_rbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp N6>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvpexcl: dvp_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EXCL>, <&kp N8>;
-            mods = <(MOD_LSFT)>;
-        };
-        dvphash: dvp_hash {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp HASH>, <&kp GRAVE>;
             mods = <(MOD_LSFT)>;
         };
     };
