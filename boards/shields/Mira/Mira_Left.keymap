@@ -31,7 +31,16 @@
 				&dvpdllr &kp SEMI &kp COMMA &kp DOT  &kp P    &kp Y 
 				&dvpamps &dvplbkt &dvplbrc  &dvprbrc &dvplpar &dvpequal
 				&to 0    &kp ESC  &mo 2
-				&kp TAB  &sl 1    &kp LCMD
+				&to 3    &sl 1    &kp LCMD
+			>;
+		};
+
+        extra {
+			bindings = <
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR
 			>;
 		};
 
@@ -40,7 +49,7 @@
 				&kp ESC  &kp LSHFT &kp A  &kp W &kp D &kp F
 				&kp M    &kp LCTRL &kp Q  &kp S &kp E &kp R
 				&to 0    &kp N0    &kp N1
-				&kp CAPS &kp C     &kp T
+				&kp CAPS &kp SPACE &kp T
 			>;
 		};
     };
