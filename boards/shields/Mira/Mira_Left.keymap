@@ -2,18 +2,31 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define COMBO_TIMEOUT 100
+#define MACRO_TAP 10
+#define MACRO_WAIT 0
+
+#define P_S 7
+#define P_T 2
+#define P_P 3
+#define P_H 4
+#define P_K 8
+#define P_W 9
+#define P_R 10
+
 / {
         combos {
                 compatible = "zmk,combos";
-                combo_game {
+                combo_the {
                         timeout-ms = <50>;
-                        key-positions = <12 15>;
-                        bindings = <&to 3>;
+                        key-positions = <P_S>;
+                        bindings = <&kp i &kp s>
                 };
         };
-};
 
-/ {
+        macros {
+        };
+
 	keymap {
 		compatible = "zmk,keymap";
 
