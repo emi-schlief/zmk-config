@@ -3,17 +3,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+        keymap {
+                compatible = "zmk,keymap";
 
-        base0 {
-        	bindings = <
-				&kp D &kp H &kp T &kp N &kp S &kp RET
-				&kp B &kp M &kp W &kp V &kp Z &kp BSPC
-				&kp U &to 0    &to 0
-				&kp A &kp SPACE &to 0
-            >;
-        };
+                base0 {
+                        bindings = <
+                                &kp D &kp H &kp T &kp N &kp S &kp RET
+                                &kp B &kp M &kp W &kp V &kp Z &kp BSPC
+                                &kp U &to 0    &to 0
+                                &kp A &kp SPACE &to 0
+                        >;
+                };
 
 		base1 {
 			bindings = <

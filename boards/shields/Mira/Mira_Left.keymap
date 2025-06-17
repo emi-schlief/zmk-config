@@ -18,9 +18,10 @@
         combos {
                 compatible = "zmk,combos";
                 combo_the {
+                        layers = <2>
                         timeout-ms = <50>;
                         key-positions = <P_S>;
-                        bindings = <&kp i &kp s>
+                        bindings = <&kp I>
                 };
         };
 
@@ -34,7 +35,7 @@
                         bindings = <
                                 &kp TAB   &kp A      &kp O    &kp E &kp U &kp I
                                 &kp LCTRL &kp SQT    &kp Q    &kp J &kp K &kp X
-                                &to 0     &kp LSHIFT &mo 2
+                                &to 0     &kp LSHIFT &to 2
                                 &kp ESC   &sl 1      &kp LCMD
                         >;
                 };
@@ -45,6 +46,11 @@
                                 &dvpamps &dvplbkt   &dvplbrc  &dvprbrc &dvplpar &dvpequal
                                 &to 0    &kp LSHFT  &mo 2
                                 &to 3    &sl 1      &kp LCMD
+                        >;
+                };
+
+                steno {
+                        bindings = <
                         >;
                 };
         
