@@ -18,10 +18,10 @@
         combos {
                 compatible = "zmk,combos";
                 combo_the {
-                        layers = <2>
+                        layers = <2>;
                         timeout-ms = <50>;
                         key-positions = <P_S>;
-                        bindings = <&kp I>
+                        bindings = <&kp I>;
                 };
         };
 };
