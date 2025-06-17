@@ -24,11 +24,10 @@
                         bindings = <&kp I>
                 };
         };
+};
 
-        macros {
-        };
-
-	keymap {
+/ {
+        keymap {
 		compatible = "zmk,keymap";
 
                 base0 {
