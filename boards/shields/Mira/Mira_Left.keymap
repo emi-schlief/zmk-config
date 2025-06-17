@@ -50,6 +50,10 @@
 
                 steno {
                         bindings = <
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+                                &kp STAR &kp STAR &kp STAR
+                                &kp STAR &kp STAR &kp STAR
                         >;
                 };
         
