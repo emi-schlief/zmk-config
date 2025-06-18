@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: Mira_Left
+    shield: mira_left
   - board: nice_nano_v2
-    shield: Mira_Right
+    shield: mira_right
