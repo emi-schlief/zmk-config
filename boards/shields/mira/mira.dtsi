@@ -12,7 +12,7 @@
         */
 
 	chosen {
-		zmk,kscan = <&default_kscan>;//physical-layout = &physical_layout0;
+		zmk,kscan = &default_kscan;//physical-layout = &physical_layout0;
 	};
 
 	default_kscan: kscan {
