@@ -1,12 +1,18 @@
 / {
+        // is this only for matrix kscans??
+        // cause it needs a transform but direct kscan doesnt use a transform cause its not a matrix...
+        // unless im misunderstanding something?
+        /*
         physical_layout0: physical_layout_0 {
                 compatible = "zmk,physical-layout";
-                kscan = <&default_kscan>;
                 display-name = "Default Layout";
+                kscan = <&default_kscan>;
+                transform = <&default_transform>;
         };
+        */
 
 	chosen {
-		zmk,physical-layout = &physical_layout0;
+		zmk,kscan = <&default_kscan>;//physical-layout = &physical_layout0;
 	};
 
 	default_kscan: kscan {
