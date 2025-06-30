@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
         physical_layout0: physical_layout_0 {
                 compatible = "zmk,physical-layout";
@@ -10,7 +12,7 @@
 		zmk,kscan = &default_kscan;//physical-layout = &physical_layout0;
 	};
 
-        default_transform: keymap_transform {
+        default_transform: keymap_transform0 {
                 compatible = "zmk,matrix-transform";
                 columns= <18>;
                 rows = <1>;
