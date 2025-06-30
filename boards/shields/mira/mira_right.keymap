@@ -8,28 +8,28 @@
 
                 base0 {
                         bindings = <
-                                &kp D &kp H &kp T &kp N &kp S &kp RET
-                                &kp B &kp M &kp W &kp V &kp Z &kp BSPC
-                                &kp U &to 0    &to 0
-                                &kp A &kp SPACE &to 0
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp D &kp H     &kp T &kp N &kp S &kp RET
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp B &kp M     &kp W &kp V &kp Z &kp BSPC
+                                                           &kp STAR &kp STAR &kp STAR &kp U &to 0     &to 0
+                                                           &kp STAR &kp STAR &kp STAR &kp A &kp SPACE &to 0
                         >;
                 };
 
 		base1 {
 			bindings = <
-				&kp F     &kp G    &kp C    &kp R    &kp L    &kp MINUS
-				&dvpstar  &dvprpar &dvpplus &dvprbkt &dvpexcl &dvphash
-				&kp AT    &kp FSLH &kp BSLH
-				&kp RSHFT &kp BSPC &to 3
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp F     &kp G    &kp C    &kp R    &kp L    &kp MINUS
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &dvpstar  &dvprpar &dvpplus &dvprbkt &dvpexcl &dvphash
+				                           &kp STAR &kp STAR &kp STAR &kp AT    &kp FSLH &kp BSLH
+				                           &kp STAR &kp STAR &kp STAR &kp RSHFT &kp BSPC &to 3
 			>;
 		};
 
 		gaming {
 			bindings = <
-				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-				&kp STAR &kp STAR &kp STAR
-				&kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				                           &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+				                           &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
 			>;
 		};
     };
