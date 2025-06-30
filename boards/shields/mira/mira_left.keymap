@@ -33,28 +33,28 @@
 
                 base0 {
                         bindings = <
-                                &kp TAB   &kp A   &kp O  &kp E   &kp U      &kp I    &kp D &kp H     &kp T &kp N &kp S &kp RET
-                                &kp LCTRL &kp SQT &kp Q  &kp J   &kp K      &kp X    &kp B &kp M     &kp W &kp V &kp Z &kp BSPC
-                                                         &to 0   &kp LSHIFT &to 2    &kp U &to 0     &to 0
-                                                         &kp ESC &sl 1      &kp LCMD &kp A &kp SPACE &to 0
+                                &kp TAB   &kp A   &kp O  &kp E   &kp U      &kp I        &kp D &kp H     &kp T &kp N &kp S &kp RET
+                                &kp LCTRL &kp SQT &kp Q  &kp J   &kp K      &kp X        &kp B &kp M     &kp W &kp V &kp Z &kp BSPC
+                                                         &to 0   &kp LSHIFT &to 2        &kp U &to 0     &to 0
+                                                         &kp ESC &sl 1      &kp LCMD     &kp A &kp SPACE &to 0
                         >;
                 };
 
                 base1 {
                         bindings = <
-                                &dvpdllr &kp SEMI  &kp COMMA &kp DOT  &kp P     &kp Y     &kp F     &kp G    &kp C    &kp R    &kp L    &kp MINUS
-                                &dvpamps &dvplbkt  &dvplbrc  &dvprbrc &dvplpar  &dvpequal &dvpstar  &dvprpar &dvpplus &dvprbkt &dvpexcl &dvphash
-                                                             &to 0    &kp LSHFT &mo 2     &kp AT    &kp FSLH &kp BSLH
-                                                             &to 3    &sl 1     &kp LCMD  &kp RSHFT &kp BSPC &to 3
+                                &dvpdllr &kp SEMI  &kp COMMA &kp DOT  &kp P     &kp Y         &kp F     &kp G    &kp C    &kp R    &kp L    &kp MINUS
+                                &dvpamps &dvplbkt  &dvplbrc  &dvprbrc &dvplpar  &dvpequal     &dvpstar  &dvprpar &dvpplus &dvprbkt &dvpexcl &dvphash
+                                                             &to 0    &kp LSHFT &mo 2         &kp AT    &kp FSLH &kp BSLH
+                                                             &to 3    &sl 1     &kp LCMD      &kp RSHFT &kp BSPC &to 3
                         >;
                 };
         
                 gaming {
                         bindings = <
-                                &kp ESC &kp LSHFT &kp A &kp W    &kp D     &kp F  &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp M   &kp LCTRL &kp Q &kp S    &kp E     &kp R  &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR 
-                                                        &to 0    &kp N0    &kp N1 &kp STAR &kp STAR &kp STAR 
-                                                        &kp CAPS &kp SPACE &kp T  &kp STAR &kp STAR &kp STAR 
+                                &kp ESC &kp LSHFT &kp A &kp W    &kp D     &kp F      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+                                &kp M   &kp LCTRL &kp Q &kp S    &kp E     &kp R      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR 
+                                                        &to 0    &kp N0    &kp N1     &kp STAR &kp STAR &kp STAR 
+                                                        &kp CAPS &kp SPACE &kp T      &kp STAR &kp STAR &kp STAR 
                         >;
                 };
         };
@@ -102,6 +102,42 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp EQUAL>, <&kp N9>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvpstar: dvp_star {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp STAR>, <&kp N0>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvprpar: dvp_rpar {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp RPAR>, <&kp N2>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvpplus: dvp_plus {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp PLUS>, <&kp N4>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvprbkt: dvp_rbkt {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp RBKT>, <&kp N6>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvpexcl: dvp_excl {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp EXCL>, <&kp N8>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dvphash: dvp_hash {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp HASH>, <&kp GRAVE>;
                         mods = <(MOD_LSFT)>;
                 };
         };
