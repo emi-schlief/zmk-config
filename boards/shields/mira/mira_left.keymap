@@ -45,24 +45,6 @@
                                 &to 3    &sl 1      &kp LCMD
                         >;
                 };
-
-                steno {
-                        bindings = <
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                        >;
-                };
-        
-                extra {
-                        bindings = <
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                        >;
-                };
         
                 gaming {
                         bindings = <
