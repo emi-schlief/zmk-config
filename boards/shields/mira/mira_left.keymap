@@ -30,46 +30,10 @@
 
                 base0 {
                         bindings = <
-                                &kp TAB   &kp A      &kp O    &kp E &kp U &kp I
-                                &kp LCTRL &kp SQT    &kp Q    &kp J &kp K &kp X
-                                &to 0     &kp LSHIFT &to 2
-                                &kp ESC   &sl 1      &kp LCMD
-                        >;
-                };
-
-                base1 {
-                        bindings = <
-                                &dvpdllr &kp SEMI   &kp COMMA &kp DOT  &kp P    &kp Y 
-                                &dvpamps &dvplbkt   &dvplbrc  &dvprbrc &dvplpar &dvpequal
-                                &to 0    &kp LSHFT  &mo 2
-                                &to 3    &sl 1      &kp LCMD
-                        >;
-                };
-
-                steno {
-                        bindings = <
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                        >;
-                };
-        
-                extra {
-                        bindings = <
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                                &kp STAR &kp STAR &kp STAR
-                        >;
-                };
-        
-                gaming {
-                        bindings = <
-                                &kp ESC  &kp LSHFT &kp A  &kp W &kp D &kp F
-                                &kp M    &kp LCTRL &kp Q  &kp S &kp E &kp R
-                                &to 0    &kp N0    &kp N1
-                                &kp CAPS &kp SPACE &kp T
+                                &kp A &kp B &kp C &kp D &kp E &kp F
+                                &kp G &kp H &kp I &kp J &kp K &kp L
+                                &kp M &kp N &kp O
+                                &kp P &kp Q &kp R
                         >;
                 };
         };
