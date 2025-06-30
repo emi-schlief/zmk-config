@@ -9,7 +9,7 @@
         };
 
 	chosen {
-		zmk,kscan = &default_kscan;//physical-layout = &physical_layout0;
+		zmk,physical-layout = &physical_layout0;
 	};
 
         default_transform: keymap_transform0 {
