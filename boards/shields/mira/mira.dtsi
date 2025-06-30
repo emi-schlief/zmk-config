@@ -5,7 +5,6 @@
                 kscan = <&default_kscan>;
                 transform = <&default_transform>;
         };
-        */
 
 	chosen {
 		zmk,kscan = &default_kscan;//physical-layout = &physical_layout0;
