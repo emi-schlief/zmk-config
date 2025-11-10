@@ -50,10 +50,12 @@
                 };
 
                 base2 {
-                        &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp STAR 
-                        &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp STAR 
-                                                   &kp STAR &kp STAR &kp STAR    &kp STAR &kp STAR &kp STAR 
-                                                   &kp STAR &kp STAR &kp STAR    &kp STAR &kp STAR &kp STAR 
+                        bindings = <
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp STAR 
+                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp STAR 
+                                                           &kp STAR &kp STAR &kp STAR    &kp STAR &kp STAR &kp STAR 
+                                                           &kp STAR &kp STAR &kp STAR    &kp STAR &kp STAR &kp STAR 
+                        >;
                 };
         
                 gaming {
