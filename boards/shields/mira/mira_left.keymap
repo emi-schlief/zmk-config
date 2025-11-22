@@ -5,14 +5,14 @@
 #define COMBO_TIMEOUT 100
 #define MACRO_TAP 10
 #define MACRO_WAIT 0
+ 
+&mt {
+        tapping-term-ms = <200>; // default
+        flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
+        retro-tap; // probably not needed
+};       
 
 / {
-        &mt {
-                tapping-term-ms = <200>; // default
-                flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
-                retro-tap; // probably not needed
-        };
-
         keymap {
 		compatible = "zmk,keymap";
 
