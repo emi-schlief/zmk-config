@@ -88,12 +88,12 @@
                         bindings = <&kp LEFT_PARENTHESIS>, <&kp STAR>;
                         mods = <(MOD_LSFT)>;
                 };               
-                rprstr: rightparenthesis_equal {
+                rpreql: rightparenthesis_equal {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp RIGHT_PARENTHESIS>, <&kp EQUAL>;
                         mods = <(MOD_LSFT)>;
-                }; 
+                };                 
                 atscar: at_caret {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
