@@ -6,23 +6,11 @@
 #define MACRO_TAP 10
 #define MACRO_WAIT 0
 
-#define P_S 7
-#define P_T 2
-#define P_P 3
-#define P_H 4
-#define P_K 8
-#define P_W 9
-#define P_R 10
-
 / {
-        combos {
-                compatible = "zmk,combos";
-                combo_the {
-                        layers = <2>;
-                        timeout-ms = <50>;
-                        key-positions = <P_S>;
-                        bindings = <&kp I>;
-                };
+        &mt {
+                tapping-term-ms = <200>; // default
+                flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
+                retro-tap; // probably not needed
         };
 
         keymap {
