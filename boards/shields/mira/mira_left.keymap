@@ -9,7 +9,8 @@
 &mt {
         tapping-term-ms = <200>; // default
         flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
-        retro-tap; // probably not needed
+        require-piror-idle-ms = <125>; // makes it always do tap when actively typing quickly
+        //retro-tap; // probably not needed
 };       
 
 / {
@@ -22,114 +23,84 @@
                 base0 {
                         bindings = <
                                 &kp TAB  &mt LCTRL A &mt LALT O &mt LCMD E &mt LSHFT U &kp I            &kp D    &mt RSHFT H &mt RCMD T &mt RALT N &mt RCTRL S &kp BSPC
-                                &kp STAR &kp SQT     &kp Q      &kp J      &kp K       &kp X            &kp B    &kp M       &kp W      &kp V      &kp Z       &kp BSPC
-                                                                &to 0      &sl 2       &to 2            &kp STAR &kp STAR    &kp STAR
-                                                                &kp ESC    &sl 1       &kp STAR         &kp BSPC &kp SPACE   &kp RET
+                                &kp STAR &kp SQT     &kp Q      &kp J      &kp K       &kp X            &kp B    &kp M       &kp W      &kp V      &kp Z       &kp RET
+                                                                &to 0      &sl 2       &kp STAR         &kp STAR &kp STAR    &kp STAR
+                                                                &kp ESC    &sl 1       &kp STAR         &kp STAR &kp SPACE   &kp RET
                         >;
                 };
 
                 base1 {
                         bindings = <
-                                &dvpdllr &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT &mt LSHFT P &kp Y         &kp F     &mt RSHFT G &mt RCMD C &mt RALT R &mt RCTRL L &kp BSPC
-                                &dvpamps &dvplbkt       &dvplbrc       &dvprbrc     &dvplpar    &dvpequal     &dvpstar  &dvprpar    &dvpplus   &dvprbkt   &dvpexcl    &dvphash
-                                                                       &to 0        &sl 2       &mo 2         &kp AT    &kp FSLH    &kp BSLH
-                                                                       &to 3        &sl 1       &kp LCMD      &kp RSHFT &kp BSPC    &to 3
+                                &dlrtld &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT &mt LSHFT P &kp Y             &kp F     &mt RSHFT G &mt RCMD C &mt RALT R &mt RCTRL L &hshgrv
+                                &ampper &kp PLUS       &lbkpnt        &lbcexc      &lprstr     &kp FSLH          &kp BSLH  &rpreql     &kp RBRC   &kp RBKT   &kp MINUS   &atscar
+                                                                      &to 0        &sl 2       &mo 2             &kp STAR  &kp STAR    &kp STAR
+                                                                      &kp STAR     &sl 1       &to 3             &kp STAR  &kp SPACE   &to 3
                         >;
                 };
 
                 numbers {
                         bindings = <
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N0   &kp N1    &kp N2 &kp N3 &kp N4 &kp MINUS 
-                                &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR    &kp N5   &kp N6    &kp N7 &kp N8 &kp N9 &kp PLUS 
-                                                           &to 0    &kp STAR &kp STAR    &kp STAR &kp STAR  &kp STAR 
-                                                           &kp STAR &kp STAR &kp STAR    &kp STAR &kp SPACE &kp STAR 
+                                &kp STAR &kp STAR &kp C_BRI_UP &kp C_PLAY_PAUSE &kp C_VOL_UP &kp STAR    &kp N0   &kp N1    &kp N2 &kp N3 &kp N4 &kp STAR
+                                &kp STAR &kp STAR &kp C_BRI_DN &kp C_MUTE       &kp C_VOL_DN &kp STAR    &kp N5   &kp N6    &kp N7 &kp N8 &kp N9 &kp STAR
+                                                               &to 0            &kp STAR     &kp STAR    &kp STAR &kp STAR  &kp STAR 
+                                                               &kp STAR         &kp STAR     &kp STAR    &kp STAR &kp SPACE &kp STAR 
                         >;
                 };
 
                 gaming {
                         bindings = <
-                                &kp ESC &kp LSHFT &kp A &kp W   &kp D     &kp F      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
-                                &kp M   &kp LCTRL &kp Q &kp S   &kp E     &kp R      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR 
-                                                        &to 0   &kp N0    &kp N1     &kp STAR &kp STAR &kp STAR 
-                                                        &kp ESC &kp SPACE &kp T      &kp STAR &kp STAR &kp STAR 
+                                &kp ESC &kp LSHFT &kp Q &kp W &kp E     &kp R      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR
+                                &kp M   &kp LCTRL &kp A &kp S &kp D     &kp F      &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR 
+                                                        &to 0 &kp N0    &kp N1     &kp STAR &kp STAR &kp STAR 
+                                                        &kp M &kp SPACE &kp T      &kp STAR &kp STAR &kp STAR 
                         >;
                 };
         };
 
         behaviors {
-                dvpdllr: dvp_dllr {
+                dlrtld: dollar_tilde {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp DLLR>, <&kp TILDE>;
+                        bindings = <&kp DOLLAR>, <&kp TILDE>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvpamps: dvp_amps {
+                };                                      
+                ampper: ampersand_percent {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp AMPS>, <&kp PRCNT>;
+                        bindings = <&kp AMPERSAND>, <&kp PERCENT>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvplbkt: dvp_lbkt {
+                };                                      
+                lbkpnt: leftbracket_printscreen {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp LBKT>, <&kp N7>;
+                        bindings = <&kp LEFT_BRACKET>, <&kp PRINTSCREEN>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvplbrc: dvp_lbrc {
+                };                          
+                lbcexc: leftbrace_exclamation {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp LBRC>, <&kp N5>;
+                        bindings = <&kp LEFT_BRACE>, <&kp EXCLAMATION>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvprbrc: dvp_rbrc {
+                };                          
+                lprstr: leftparenthesis_star {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp RBRC>, <&kp N3>;
+                        bindings = <&kp LEFT_PARENTHESIS>, <&kp STAR>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvplpar: dvp_lpar {
+                };               
+                rprstr: rightparenthesis_equal {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp LPAR>, <&kp N1>;
+                        bindings = <&kp RIGHT_PARENTHESIS>, <&kp EQUAL>;
                         mods = <(MOD_LSFT)>;
-                };
-                dvpequal: dvp_equal {
+                }; 
+                atscar: at_caret {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp EQUAL>, <&kp N9>;
+                        bindings = <&kp AT>, <&kp CARET>;
                         mods = <(MOD_LSFT)>;
                 };
-                dvpstar: dvp_star {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp STAR>, <&kp N0>;
-                        mods = <(MOD_LSFT)>;
-                };
-                dvprpar: dvp_rpar {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp RPAR>, <&kp N2>;
-                        mods = <(MOD_LSFT)>;
-                };
-                dvpplus: dvp_plus {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp PLUS>, <&kp N4>;
-                        mods = <(MOD_LSFT)>;
-                };
-                dvprbkt: dvp_rbkt {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp RBKT>, <&kp N6>;
-                        mods = <(MOD_LSFT)>;
-                };
-                dvpexcl: dvp_excl {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp EXCL>, <&kp N8>;
-                        mods = <(MOD_LSFT)>;
-                };
-                dvphash: dvp_hash {
+                hshgrv: hash_grave {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp HASH>, <&kp GRAVE>;
