@@ -5,13 +5,6 @@
 #define COMBO_TIMEOUT 100
 #define MACRO_TAP 10
 #define MACRO_WAIT 0
- 
-&mt {
-        tapping-term-ms = <200>; // default
-        flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
-        require-piror-idle-ms = <125>; // makes it always do tap when actively typing quickly
-        //retro-tap; // probably not needed
-};       
 
 / {
         keymap {
@@ -58,6 +51,16 @@
         };
 
         behaviors {
+                mt: mod_tap {
+                        compatible = "zmk,behavior-hold-tap";
+                        #binding-cells = <2>;
+                        flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
+                        tapping-term-ms = <200>; // default
+                        require-piror-idle-ms = <125>; // makes it always do tap when actively typing quickly
+                        //retro-tap; // probably not needed
+                        bindings = <&kp>, <&kp>;
+                };       
+
                 dlrtld: dollar_tilde {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
