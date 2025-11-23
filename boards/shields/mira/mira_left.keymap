@@ -56,6 +56,7 @@
                         #binding-cells = <2>;
                         flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
                         tapping-term-ms = <200>; // default
+                        quick-tap-ms = <200>; // not sure if i need/want this
                         require-piror-idle-ms = <125>; // makes it always do tap when actively typing quickly
                         //retro-tap; // probably not needed
                         bindings = <&kp>, <&kp>;
