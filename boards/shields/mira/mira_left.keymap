@@ -51,7 +51,7 @@
         };
 
         behaviors {
-                mt: mod_tap {
+                test: mod_tap {
                         compatible = "zmk,behavior-hold-tap";
                         #binding-cells = <2>;
                         flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
