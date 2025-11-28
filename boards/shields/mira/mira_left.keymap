@@ -82,7 +82,7 @@
                         bindings = <&kp LEFT_BRACE>, <&kp EXCLAMATION>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };                          
-                plsstar: plus_star {
+                plsstr: plus_star {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&kp PLUS>, <&kp STAR>;
