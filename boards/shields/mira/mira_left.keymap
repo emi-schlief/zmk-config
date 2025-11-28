@@ -13,8 +13,8 @@
                         bindings = <
                                 &kp TAB  &mt LCTRL A &mt LALT O &mt LCMD E &mt LSHFT U &kp I            &kp D    &mt RSHFT H &mt RCMD T &mt RALT N &mt RCTRL S &kp BSPC
                                 &hshgrv  &kp SQT     &kp Q      &kp J      &kp K       &kp X            &kp B    &kp M       &kp W      &kp V      &kp Z       &kp RET
-                                                                &to 0      &sl 2       &kp STAR         &kp STAR &kp STAR    &kp STAR
-                                                                &kp ESC    &sl 1       &kp STAR         &kp STAR &kp SPACE   &kp RET
+                                                                &to 0      &sl 2       &to 4            &kp STAR &kp STAR    &kp STAR
+                                                                &kp ESC    &sl 1       &to 3            &kp STAR &kp SPACE   &kp RET
                         >;
                 };
 
@@ -22,7 +22,7 @@
                         bindings = <
                                 &dlrtld &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT &mt LSHFT P &kp Y             &kp F     &mt RSHFT G &mt RCMD C &mt RALT R &mt RCTRL L &kp BSPC
                                 &ampper &plsstr        &lbkpnt        &lbcexc      &kp LPAR    &kp FSLH          &kp BSLH  &kp RPAR    &rbceql    &kp RBKT   &kp MINUS   &atscar
-                                                                      &to 0        &sl 2       &mo 2             &kp STAR  &kp STAR    &kp STAR
+                                                                      &to 0        &sl 2       &to 4             &kp STAR  &kp STAR    &kp STAR
                                                                       &kp STAR     &sl 1       &to 3             &kp STAR  &kp SPACE   &to 3
                         >;
                 };
@@ -31,17 +31,26 @@
                         bindings = <
                                 &kp STAR &kp STAR &kp C_BRI_UP &kp C_PLAY_PAUSE &kp C_VOL_UP &kp STAR    &kp N1   &kp N2    &kp N3 &kp N4 &kp N5 &kp BSPC
                                 &kp STAR &kp STAR &kp C_BRI_DN &kp C_MUTE       &kp C_VOL_DN &kp STAR    &kp N6   &kp N7    &kp N8 &kp N9 &kp N0 &kp STAR
-                                                               &to 0            &kp STAR     &kp STAR    &kp STAR &kp STAR  &kp STAR 
+                                                               &to 0            &kp STAR     &to 4       &kp STAR &kp STAR  &kp STAR 
                                                                &kp STAR         &kp STAR     &kp STAR    &kp STAR &kp SPACE &kp STAR 
                         >;
                 };
 
                 gaming {
                         bindings = <
-                                &kp ESC &kp Q     &kp A &kp W &kp E     &kp R      &kp T &kp Y &kp U &kp I &kp O &kp P
-                                &kp M   &kp LCTRL &kp M &kp S &kp D     &kp F      &kp G &kp H &kp J &kp K &kp L &kp STAR 
-                                                        &to 0 &kp N0    &kp N1     &kp Z &kp X &kp C 
-                                                        &kp M &kp SPACE &kp T      &kp V &kp B &kp N 
+                                &kp ESC &kp Q     &kp A &kp W &kp E     &kp R         &kp T &kp Y &kp U &kp I &kp O &kp P
+                                &kp M   &kp LCTRL &kp M &kp S &kp D     &kp F         &kp G &kp H &kp J &kp K &kp L &kp STAR 
+                                                        &to 0 &kp N0    &kp N1        &kp Z &kp X &kp C 
+                                                        &kp M &kp SPACE &kp T         &kp V &kp B &kp N 
+                        >;
+                };
+
+                steno {
+                        bindings = <
+                                &kp ESC &kp Q &kp W &kp E &kp R &kp T         &kp Y &kp U &kp I &kp O &kp P    &kp LBKT
+                                &kp ESC &kp A &kp S &kp D &kp F &kp G         &kp H &kp J &kp K &kp L &kp SEMI &kp APOS 
+                                                    &to 0 &to 0 &kp C         &kp M &to 0 &to 0
+                                                    &to 0 &kp C &kp V         &kp N &kp M &to 0 
                         >;
                 };
         };
