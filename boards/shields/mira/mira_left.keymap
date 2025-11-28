@@ -20,7 +20,7 @@
 
                 base1 {
                         bindings = <
-                                &dlrtld &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT &mt LSHFT P &kp Y             &kp F     &mt RSHFT G &mt RCMD C &mt RALT R &mt RCTRL L &BSPC
+                                &dlrtld &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT &mt LSHFT P &kp Y             &kp F     &mt RSHFT G &mt RCMD C &mt RALT R &mt RCTRL L &kp BSPC
                                 &ampper &plsstr        &lbkpnt        &lbcexc      &kp LPAR    &kp FSLH          &kp BSLH  &kp RPAR    &rbceql    &kp RBKT   &kp MINUS   &atscar
                                                                       &to 0        &sl 2       &mo 2             &kp STAR  &kp STAR    &kp STAR
                                                                       &kp STAR     &sl 1       &to 3             &kp STAR  &kp SPACE   &to 3
