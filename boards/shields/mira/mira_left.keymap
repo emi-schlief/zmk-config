@@ -65,7 +65,7 @@
                         bindings
                                 = <&macro_tap &tog 3>
                                 , <&macro_press &kp E kp R kp F kp V kp O kp L>
-                                , <&macro_release &kp E kp R kp F kp V kp O kp L>
+                                , <&macro_release &kp E kp R kp F kp V kp O kp L>;
                 };
         };
 
