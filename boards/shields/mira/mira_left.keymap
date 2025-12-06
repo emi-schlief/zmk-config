@@ -38,10 +38,10 @@
 
                 3_system {
                         bindings = <
-                                &kp F1 &kp F2 &kp F3 &kp F4  &kp F5   &kp F6        &kp STAR &kp STAR  &kp UP   &kp RIGHT &kp STAR &kp BSPC
-                                &kp F7 &kp F8 &kp F9 &kp F11 &kp F12  &kp F13       &kp STAR &kp LEFT  &kp DOWN &kp STAR  &kp STAR &kp STAR
-                                                     &to 0   &kp STAR &kp STAR      &kp STAR &kp STAR  &kp STAR 
-                                                     &kp TAB &kp STAR &kp STAR      &kp STAR &kp SPACE &kp RET  
+                                &kp STAR &kp UP    &kp LEFT &kp DOWN &kp RIGHT &kp STAR      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F11 
+                                &kp STAR &kp STAR  &kp STAR &kp STAR &kp STAR  &kp STAR      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10  &kp F12
+                                                            &to 0    &kp STAR  &kp STAR      &kp STAR &kp STAR  &kp STAR 
+                                                            &kp TAB  &kp STAR  &sl 3         &kp STAR &kp SPACE &kp RET  
                         >;
                 };
 
