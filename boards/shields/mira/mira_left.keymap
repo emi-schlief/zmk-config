@@ -114,7 +114,7 @@
                         //require-prior-idle-ms = <200>; // hm,,,
                         quick-tap-ms = <150>;
                         //retro-tap; // probably not needed // bad on windows key
-                        bindings = <&kp>, <&kp>;
+                        //bindings = <&kp>, <&kp>;
                 };
 
                 dlrtld: dollar_tilde {
