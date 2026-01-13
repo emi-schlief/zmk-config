@@ -21,7 +21,7 @@
                 1_base {
                         bindings = <
                                 &kp ESC        &mt LCTRL SEMI &mt LALT COMMA &mt LCMD DOT   &mt LSHFT P    &kp Y            &kp F          &mt RSHFT G    &mt RCMD C      &mt RALT R    &mt RCTRL Z     &bspdel
-                                &kp TAB        &lt 3 HASH     &lt 2 LBKT     &lbcexc        &kp LPAR       &kp FSLH         &kp BSLH       &kp RPAR       &rbceql         &kp RBKT      &kp MINUS       &kp RET
+                                &kp TAB        &lt 3 hshgrv   &lt 2 LBKT     &lbcexc        &kp LPAR       &kp FSLH         &kp BSLH       &kp RPAR       &rbceql         &kp RBKT      &kp MINUS       &kp RET
                                                                              &to 0          &kp STAR       &to 4            &kp STAR       &kp STAR       &kp STAR
                                                                              &kp STAR       &sl 1          &sl 3            &kp STAR       &kp SPACE      &kp STAR
                         >;
