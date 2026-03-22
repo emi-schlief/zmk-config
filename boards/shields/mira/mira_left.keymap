@@ -13,8 +13,8 @@
                         bindings = <
                                 &kp ESC        &mt LCTRL A    &mt LALT O     &mt LCMD E     &mt LSHFT U    &kp I            &kp D          &mt RSHFT H    &mt RCMD T     &mt RALT N     &mt RCTRL S     &kp BSPC
                                 &kp TAB        &lt 3 SQT      &lt 2 Q        &kp J          &kp K          &kp X            &kp B          &kp M          &kp W          &kp V          &kp L           &kp RET
-                                                                             &to 0          &kp STAR       &kp STAR         &plvtgl        &kp CARET      &to 4
-                                                                             &to 6          &sl 1          &sl 3            &key_repeat    &kp GRAVE      &kp AT
+                                                                             &to 0          &kp STAR       &kp GRAVE        &plvtgl        &kp CARET      &to 4
+                                                                             &to 6          &sl 1          &sl 3            &key_repeat    &kp SPACE      &kp AT
                         >;
                 };
 
@@ -111,6 +111,7 @@
                         flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
                         tapping-term-ms = <200>; // default
                         //require-prior-idle-ms = <200>; // hm,,,
+                /*
                         quick-tap-ms = <150>;
                         //retro-tap; // probably not needed // bad on windows key
                         //bindings = <&kp>, <&kp>;
