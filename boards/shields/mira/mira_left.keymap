@@ -111,7 +111,6 @@
                         flavor = "balanced"; // fixes rolling issues, mandatory for home row mods imo
                         tapping-term-ms = <200>; // default
                         //require-prior-idle-ms = <200>; // hm,,,
-                /*
                         quick-tap-ms = <150>;
                         //retro-tap; // probably not needed // bad on windows key
                         //bindings = <&kp>, <&kp>;
