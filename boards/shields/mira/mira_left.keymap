@@ -27,7 +27,6 @@
                         >;
                 };
 
-                /*
                 2_numbers {
                         bindings = <
                                 &dlrtld        &mt LCTRL A    &mt LALT A     &mt LCMD E     &mt LSHFT PLUS &kp STAR         &kp N1         &kp N2         &kp N3          &kp N4        &kp N5          &kp BSPC
@@ -73,6 +72,7 @@
                         >;
                 };
                 
+                /*
                 empty {
                         bindings = <
                                 &              &              &              &              &              &              &              &              &              &              &              &
